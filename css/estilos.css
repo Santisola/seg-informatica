@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'whitneylight';
+    src: url(../assets/fonts/whitneylight.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Heebo', sans-serif;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+}
+
+main > div{
+    width: 45%;
+}
+
+main > div:last-of-type{
+    padding: 0 72px;
+    width: 55%;
+}
+
+.imgContainer{
+    position: relative;
+}
+
+.imgContainer > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: opacity 0.7s ease-in-out;
+}
+
+h1 a{
+    font-size: 0;
+    width: 179px;
+    height: 73px;
+    display: block;
+    background: url(../assets/logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: .5rem;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+}
+
+.navbar li{
+    display: flex;
+    height: min-content;
+}
+
+.navbar-link{
+    background-image: url(../assets/icons.svg);
+    background-size: 420px 100px;
+    background-position-y: -55px;
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+    font-size: 0;
+    margin: 0 9px;
+}
+
+.navbar > li:first-of-type .navbar-link{
+    background-position-x: -266px;
+}
+.navbar > li:first-of-type .navbar-link:hover{
+    background-position-x: -56px;
+}
+
+.navbar > li:nth-of-type(2) .navbar-link{
+    background-position-x: -315px;
+}
+.navbar > li:nth-of-type(2) .navbar-link:hover{
+    background-position-x: -105px;
+}
+
+.navbar > li:last-of-type .navbar-link{
+    background-position-x: -364px;
+}
+.navbar > li:last-of-type .navbar-link:hover{
+    background-position-x: -154px;
+}
+
+.content-container{
+    margin-left: 92px;
+}
+
+form{
+    margin-bottom: 16px;
+    justify-content: flex-start;
+    margin-top: 48px;
+}
+
+.form-group{
+    max-width: 414px;
+}
+
+input{
+    margin-right: 10px;
+    padding: 5px;
+    border: 0;
+    border-radius: 6px;
+}
+
+.form-group > input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(26, 38, 51, 0.1);
+    margin-bottom: 28px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    transition: border-bottom-color 0.4s;
+}
+
+.form-group > input:focus {
+    outline: none;
+    border-bottom-color: rgba(26, 38, 51, 0.5);
+}
+
+form > p{
+    font-family: 'whitneylight', sans-serif;
+    font-weight: 300;
+    color: #424242;
+    margin-left: 0;
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 1.1;
+}
+
+.btn{
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    height: 56px;
+    cursor: pointer;
+}
+
+form .btn{
+    max-width: 115px;
+}
+
+.btn-primary{
+    background:#d52b1e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-secondary{
+    display: inline-block;
+    max-width: 220px;
+    height: min-content;
+    background:#fff;
+    color: #d52b1e;
+    font-weight: bold;
+    border: solid 1px #d52b1e;
+    text-decoration: none;
+    padding: .25rem 1rem;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8vh;
+    position: relative;
+}
+
+.btn-secondary::after{
+    content: "";
+    height: 4px;
+    width: 4px;
+    border-top: solid 1px #d52b1e;
+    border-right: solid 1px #d52b1e;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#forgotPass{
+    display: block;
+    color: #d52b1e;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.content-container > p{
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.38;
+    color: #666;
+}
+
+.content-footer{
+    margin-top: 15px;
+}
+
+.content-footer > p{
+    font-size: 12px;
+    line-height: 1.38;
+    color: rgba(26, 38, 51, 0.5);
+    margin-top: 15px;
+}
