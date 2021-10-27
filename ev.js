@@ -14,7 +14,8 @@ const imgs = [
 
 form.addEventListener('submit', ev => {
     ev.preventDefault()
-    alert('Hola ' + nombre.value + ', te acabo de robar tus datos del homebanking, voy a gastarme toda tu plata en combos de Mc Donalds. PD: Como vas a tener de contraseña "' + contra.value + '" jajaja');
+    alert('Hola ' + nombre.value + ', te acabo de robar tus datos del homebanking, voy a gastarme toda tu plata en combos de Mc Donalds. PD: Como vas a tener de contraseña "' + contra.value + '" jajaja.');
+    window.location.replace('bobi.html');
 })
 
 let cont = 0
